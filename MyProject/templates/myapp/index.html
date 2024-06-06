@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+  <title>N Catalog</title>
+{% endblock %}
+{% block content %}
+    <div style="padding: auto; background-color: beige; text-align: center;">
+      <img src="{% static 'assets/img/ncatalog.png' %}" alt="" height="15%" width="15%">
+      <h1>N Catalog</h1>
+      <p>Não deixe para amanhã o look que você pode comprar hoje.</p>
+    </div>
+  {% include "partials/_alertas.html"%}
+  <!-- <a href="{% url 'criar_item' %}" class="btn btn-primary">Criar itens</a> -->
+  {% include 'partials/_cards.html' %}
+    <!--Footer Início-->  
+  {% include 'partials/_footer.html' %}
+  <!--Footer Fim-->  
+{% endblock %}
