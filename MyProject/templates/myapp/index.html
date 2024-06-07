@@ -4,10 +4,11 @@
   <title>N Catalog</title>
 {% endblock %}
 {% block content %}
-    <div style="padding: auto; background-color: beige; text-align: center;">
-      <img src="{% static 'assets/img/ncatalog.png' %}" alt="" height="15%" width="15%">
-      <h1>N Catalog</h1>
-      <p>Não deixe para amanhã o look que você pode comprar hoje.</p>
+    <div class="d-flex" style="background-color: beige;">
+      <img src="{% static 'assets/img/ncatalog.png' %}" alt="" height="60px" width="60px">
+    </div>
+    <div style="text-align: center;">
+      <h5>Não deixe para amanhã o look que você pode comprar hoje.</h5>
     </div>
   {% include "partials/_alertas.html"%}
   <!-- <a href="{% url 'criar_item' %}" class="btn btn-primary">Criar itens</a> -->

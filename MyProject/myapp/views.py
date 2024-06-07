@@ -26,7 +26,7 @@ def login_view(request):
             return redirect('home') # Substitua 'home' pela URL desejada após o login
         else:
             messages.error(request, 'Usuário ou senha incorretos.')
-        return render(request, 'login.html')
+    return render(request, 'login.html')
     
 def logout_view(request):
     logout(request)
